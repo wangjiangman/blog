@@ -1,12 +1,12 @@
 # Site settings
 title: Fiona Blog
-SEOTitle: 你的博客 | Fiona Blog
+SEOTitle: Fiona的博客 | Fiona Blog
 header-img: img/home-bg.jpg
 email: fiona_914@163.com
 description: ""
 keyword: ""
 url: "http://huangxuan.me"              # your host, for absolute URL
-baseurl: "/blog"         # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
