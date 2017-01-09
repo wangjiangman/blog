@@ -1,9 +1,9 @@
 ---
 layout:     post
-title:      "Example Post with Code Highlight"
+title:      "Javascript的模块化"
 subtitle:   "CommonJS，RequireJS，SeaJS 归纳笔记"
-date:       2015-05-25
-author:     "Hux"
+date:       2017-01-09
+author:     "Fiona"
 header-img: "img/post-bg-js-module.jpg"
 tags:
     - 前端开发
@@ -314,7 +314,3 @@ define(function(require, exports, module) {
 
 
 
-
-## WebPack
-
-> working...
