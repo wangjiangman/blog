@@ -9,35 +9,24 @@ tags:
     - 生活
 ---
 
-> “Yeah It's on. ”
+> “Yeah It's a new beginning. ”
 
 
 ## 前言
 
-Fiona 的 Blog 就这么开通了。
+Fiona 在 2017 年开通了新的 blog 了。
 
-[跳过废话，直接看技术实现 ](#build)
+一直想要坚持写一些东西，就从这里开始吧！
 
-
-
-2017 年，Fiona 总算有个地方可以好好写点东西了。
-
-
-作为一个前端程序员， Blog 这种轮子要是挂在大众博客程序上就太没意思了。以后可以在自己的博客写些东西了。
-
-
-<p id = "build"></p>
----
 
 ## 正文
 
-接下来说说搭建这个博客的技术细节。  
-参考：
+搭建该博客参考了以下网站：
 * [GitHub Pages](https://pages.github.com/)
 * [Jekyll](http://jekyllrb.com/)
 * [阮一峰github Pages和Jekyll入门](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html)
 
-其优点非常明显：
+博客具有以下特点：
 
 * **Markdown** 带来的优雅写作体验
 * 非常熟悉的 Git workflow ，**Git Commit 即 Blog Post**
