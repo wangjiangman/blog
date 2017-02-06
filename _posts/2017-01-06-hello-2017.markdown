@@ -22,6 +22,7 @@ Fiona 在 2017 年开通了新的 blog 了。
 ## 正文
 
 搭建该博客参考了以下网站：
+
 * [GitHub Pages](https://pages.github.com/)
 * [Jekyll](http://jekyllrb.com/)
 * [阮一峰github Pages和Jekyll入门](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html)
