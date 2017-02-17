@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "敏捷开发修炼之道note"
-subtitle:   "Practice of an agile devoloper note"
+subtitle:   "Practice of an agile developer note"
 date:       2017-02-15
 author:     "Fiona"
 header-img: "img/post-bg-unix-linux.jpg"
@@ -10,7 +10,7 @@ tags:
     - 程序员心法
 ---
 
-> To be an agile devoloper
+> To be an agile developer
 
 
 ## Catagory
@@ -122,7 +122,7 @@ c、提交代码
 8. **17使用短迭代增量发布**     
 大项目最好的办法是小步前进，大步跳跃增加了风险，小步前进才能把握平衡。迭代让人感觉非常专注且具效率，你能看到一个世纪并且确切的目标，最终期限迫使你做出一些艰难的决策，没有遗留下长期悬而未决的问题。
 敏捷开发的周期应该如图所示：  
-[图片]
+![java-javascript](/blog/img/in-post/post-agile-develop/develop-circle.png)
 
 9. **18固定的价格就意味着背叛承诺**     
 软件开发过程变化无常，所以我们采用迭代和增量开发方式。固定一个价格是无视变化的表现，我们要对软件开发工作作出真实的评估。
@@ -142,5 +142,5 @@ c、提交代码
 - ### 敏捷协作
 
 	TODO
-	
+
 
