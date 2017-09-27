@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "Welcome to Fiona Blog"
-subtitle:   " \"Hello World, Hello Blog\""
+title:      "Welcome to Fiona's Blog"
+subtitle:   " \"Move fast and break things\""
 date:       2017-01-06 12:00:00
 author:     "Fiona"
 header-img: "img/post-bg-2015.jpg"
@@ -16,26 +16,33 @@ tags:
 
 Fiona 开通了新的 blog 了。
 
-一直想要坚持写一些东西，就从这里开始吧！
+从Linux C程序开发转来做Web有两年多了吧！  
 
+Web技术发展之快真的让人眼花缭乱。下图就是明证...  
 
-## 正文
+一直想要坚持写一些东西，日积月累做着一成不变的业务，总让人感到没有重心和丧气。  
 
-搭建该博客参考了以下网站：
+希望通过记录和总结，可以让我对于技术的理解更加系统和深入！  
+
+Just do it ！  
+
+![java-javascript](/blog/img/in-post/post-hello-blog/web_related.jpg)
+
+## 博客搭建
+
+**主要参考了以下网站：**
 
 * [GitHub Pages](https://pages.github.com/)
 * [Jekyll](http://jekyllrb.com/)
-* [阮一峰github Pages和Jekyll入门](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html)
+* [阮一峰github Pages和Jekyll入门](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html)  
 
-博客具有以下特点：
+**博客设计：**  
 
-* **Markdown** 带来的优雅写作体验
-* 非常熟悉的 Git workflow ，**Git Commit 即 Blog Post**
-* 利用 GitHub Pages 的域名和免费无限空间，不用自己折腾主机
-	* 如果需要自定义域名，也只需要简单改改 DNS 加个 CNAME 就好了
-* Jekyll 的自定制非常容易，基本就是个模版引擎
+个人比较懒，尊重别人的设计产权，给出以下链接，特别感谢！
 
----
+* [Hux的博客模板](http://huangxuan.me/)
 
-使用jekyll进行本地调试，详细见下一篇博客。
+**博客的调试：** 
+
+详细见下一篇博客。[jekyll本地调试环境搭建](http://localhost:4000/blog/2017/01/07/use-jekyll/)
 
