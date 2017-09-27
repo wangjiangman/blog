@@ -6,7 +6,7 @@ date:       2017-01-09
 author:     "Fiona"
 header-img: "img/post-bg-js-version.jpg"
 tags:
-    - 前端开发
+    - 转载
     - JavaScript
     - 翻译
 ---

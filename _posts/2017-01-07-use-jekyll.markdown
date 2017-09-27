@@ -6,7 +6,8 @@ date:       2017-01-07 12:00:00
 author:     "Fiona"
 header-img: "img/post-bg-2015.jpg"
 tags:
-    - tool
+    - 环境搭建
+    - 原创
 ---
 
 > “尝试些新东西吧~ ”
@@ -70,3 +71,13 @@ http://rubygems.org/
 
 <pre><code>jekyll server
 </code></pre>
+
+遇到的问题
+------------
+
+- Deprecation: The 'gems' configuration option has been renamed to 'plugins'. Please update your config file accordingly.  
+	解决：  
+	配置文件_config.yml中，使用了 plugins 的配置项，应该是用plugins替换掉gems
+- 插件（如：jekyll-paginate）没有安装问题  
+  解决：  
+  <pre><code>gem install jekyll-paginate</code></pre>

@@ -6,7 +6,7 @@ date:       2017-01-06 12:00:00
 author:     "Fiona"
 header-img: "img/post-bg-2015.jpg"
 tags:
-    - 生活
+    - 杂谈
 ---
 
 > “Yeah It's a new beginning. ”
