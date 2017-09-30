@@ -83,7 +83,7 @@ Windows环境直接忽略，直接开始在Linux环境上搭建，主要两种�
 * [Koa](http://koajs.com/)
 
 2. 书籍
-* 《Node.js实战》(Node.js in action)
+* [《Node.js实战》(Node.js in action)](https://www.manning.com/books/node-js-in-action)
 * [《Node入门》](https://www.nodebeginner.org/index-zh-cn.html#structure)
 * [《7-days-nodejs》](http://nqdeng.github.io/7-days-nodejs/)
 
