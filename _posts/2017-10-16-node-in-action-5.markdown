@@ -10,11 +10,11 @@ tags:
     - 翻译
 ---
 
-> 本文翻译自如下链接：https://github.com/senchalabs/connect/blob/master/README.md
+> 本文大部分翻译自：https://github.com/senchalabs/connect
 
 ## 前言  
-
-connect是一个可扩展的基于Node.js的HTTP server框架，它使用称之为中间件的"plugins"。
+connect是[TJ Holowaychuk](https://github.com/tj)给node.js社区贡献的一个热门的web基础框架。TJ Holowaychuk的另一力作express框架便是在它基础之上构建的。与express不同，connect更加短小精悍，是一个偏向基础设施的框架。  
+正如名字所表达的一样，connect框架做的事情很简单，就是把一系列的组件连接到一起，然后让http的请求依次流过这些组件。这些被connect串联起来的组件被称为中间件（middlewire）。在connect中，http请求的处理流程被划分成一个个小片段，每一个小片段代表一项处理任务（如：请求body的解析，session的维护等），由一个中间件负责，前后片段之间靠request，response等对象传递中间数据。connect框架对这些处理细节并不关心，只知道将请求从一个中间件导向下一个中间件。
 ```javascript
 var connect = require('connect');
 var http = require('http');
@@ -91,17 +91,16 @@ app.use('/bar', function barMiddleware(req, res, next) {
 ```
 
 ### 错误处理中间件
-有特殊的"error-handling"中间件。这些中间件其函数需要4个参数。当一个中间件将错误传递到下一个中间件时，应用程序将继续查找在该中间件之后声明的错误处理中间件并调用它，而且会跳过在该中间之前调用的任何错误处理中间件以及在该中间件之后处理的非错误处理中间件。
+有特殊的"异常处理"中间件。这些中间件需要4个参数。前面比正常处理函数多带一个err参数。通过传递给next传递一个err参数，告诉框架当前中间件处理出现异常。如果err为空，则会按顺序执行后面正常处理函数，忽略异常处理函数;相反，如果err非空，则会按顺序执行后续的异常处理函数，而忽略正常处理函数。
 
 ```javascript
-// regular middleware
+// 正常处理函数
 app.use(function (req, res, next) {
   // i had an error
   next(new Error('boom!'));
 });
 
-// error middleware for errors that occurred in middleware
-// declared before this
+// 异常处理函数
 app.use(function onerror(err, req, res, next) {
   // an error occurred!
 });
@@ -119,7 +118,7 @@ var server = http.createServer(app);
 
 ## Middleware
 以下中间件和库是Connect/Express团队官方支持的
-  - [body-parser](https://www.npmjs.com/package/body-parser) - previous `bodyParser`, `json`, and `urlencoded`. You may also be interested in:
+  - [body-parser](https://www.npmjs.com/package/body-parser) - previous `bodyParser`, `json`, 和 `urlencoded`. 你还可能对以下中间件感兴趣:
     - [body](https://www.npmjs.com/package/body)
     - [co-body](https://www.npmjs.com/package/co-body)
     - [raw-body](https://www.npmjs.com/package/raw-body)
@@ -224,3 +223,7 @@ app.use('/foo', function (req, res, next) {
   - Connect `< 2.8` - node `0.6`
   - Connect `>= 2.8 < 3` - node `0.8`
   - Connect `>= 3` - node `0.10`, `0.12`, `4.x`, `5.x`, `6.x`, `7.x`, `8.x`; io.js `1.x`, `2.x`, `3.x`
+
+## 参考
+ - [connect框架git仓库](https://github.com/senchalabs/connect)
+ - [connect源码分析-基础架构](https://cnodejs.org/topic/4fb79b0e06f43b56112b292c)
