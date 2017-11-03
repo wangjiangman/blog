@@ -20,7 +20,12 @@ Node.js的异步编程方式有：回调、事件发射器和流程控制管理�
 
 ## Node.js模块化
 ### Node模块特点  
-Node为了代码重用，会将代码进行打包,且**不会改变全局作用域**。
+Node为了代码重用，会将代码进行打包,且**不会改变全局作用域**。实际上，模块代码在执行之前，Node.js会为其包裹一层类似如下的代码：
+```javascript
+(function(exports, require, module, __dirname, __filename) {
+  // Your module code actually lives in here
+})
+```
 
 ### Node模块的形式  
 文件或者目录，若模块是一个目录,Node通常会在这个目录下寻找index.js（可通过当前目录下的package.json文件中的main属性指定重写）文件作为入口。
