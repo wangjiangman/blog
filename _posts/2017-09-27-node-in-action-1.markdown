@@ -45,32 +45,31 @@ Windows环境直接忽略，直接开始在Linux环境上搭建，主要两种�
 1. 下载编译好的文件（推荐安装方式，在虚拟机Ubuntu系统上安装成功）  
     简单说就是解压后，bin文件夹中存在node及npm，如果进入到对应文件中执行命令一点问题没有，不过不是全局的。所以设置为全局就可以了。
     <pre>
-    wget https://nodejs.org/dist/v6.10.1/node-v6.10.1-linux-x64.tar.xz  // 下载
-    xz -d node-v6.10.1-linux-x64.tar.xz // 解压为tar类型
-    tar -xvf node-v6.10.1-linux-x64.tar  // -解压
+    $ wget https://nodejs.org/dist/v6.10.1/node-v6.10.1-linux-x64.tar.xz  // 下载
+    $ xz -d node-v6.10.1-linux-x64.tar.xz // 解压为tar类型
+    $ tar -xvf node-v6.10.1-linux-x64.tar  // -解压
     </pre>
 
     解压完成后pwd查看当前下载目录，并执行以下命令设置全局：
 
     <pre>
-    ln -s /home/downloads/node-v6.10.1-linux-x64/bin/node /usr/local/bin/node
-    ln -s /home/downloads/node-v6.10.1-linux-x64/bin/npm /usr/local/bin/npm
+    $ export NODE_HOME=/home/fiona/node/node-v6.10.1-linux-x64
+    $ export PATH=$NODE_HOME/bin:$PATH
     </pre>
-    其中/home/downloads/这个路径是下载nodejs存放的路径
-    
+    其中/home/fiona/node/node-v6.10.1-linux-x64这个路径是解压后nodejs存放的路径
 
 2. 通过源码编译安装(云服务器CentOS上安装成功。编译速度极其慢。)
     执行以下命令：
     <pre>
-    wget https://nodejs.org/dist/v6.10.1/node-v6.10.1.tar.gz // 该地址为Source Code下载地址
-    tar -zxvf node-v6.10.1.tar.gz // 解压下载的Source Code
+    $ wget https://nodejs.org/dist/v6.10.1/node-v6.10.1.tar.gz // 该地址为Source Code下载地址
+    $ tar -zxvf node-v6.10.1.tar.gz // 解压下载的Source Code
     </pre>
     解压完成后依次执行：
     <pre> 
-    cd node-v6.10.1
-    ./configure
-    make
-    sudo make install  //这里一定要加sudo
+    $ cd node-v6.10.1
+    $ ./configure
+    $ make
+    $ sudo make install  //这里一定要加sudo
     </pre>
 
 ## Node学习资源
