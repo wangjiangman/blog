@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Ubuntu安装mongodb 3.4"
+title:      "CentOS下使用yum安装mongodb 3.4 及 Ubuntu安装mongodb 3.4"
 subtitle:   ""
 date:       2017-11-09
 author:     "Fiona"
@@ -12,6 +12,10 @@ tags:
 
 > 原文链接：https://buzheng.org/2017/20170118-install-mongodb-on-ubuntu.html
 
+# CentOS下使用yum安装mongodb 3.4
+  [参考链接](https://www.cnblogs.com/acewhl/p/6638486.html)
+  
+# Ubuntu安装mongodb 3.4
 今天参照 mongodb 的[官方文档](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)在 Unbuntu Server 16.04 上安装了 Mongodb 3.4，步骤很简单，就顺手翻译了一下这个文档，这个文档是讲述了 Mongodb 3.4 在 Ubuntu 12.04, 14.04, 16.04 上的安装步骤。<!--more-->
 
 ## 概述
