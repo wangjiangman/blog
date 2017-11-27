@@ -1,10 +1,10 @@
 ---
 layout:     post
-title:      "CentOS下使用yum安装mongodb 3.4 及 Ubuntu安装mongodb 3.4"
-subtitle:   ""
+title:      "Linux知识整理 (1)"
+subtitle:   "mongodb 3.4在CentOS及Ubuntu系统上的安装"
 date:       2017-11-09
 author:     "Fiona"
-header-img: "img/node.png"
+header-img: "img/linux-bg.jpg"
 tags:
     - Node.js
     - 转载

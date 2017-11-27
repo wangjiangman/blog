@@ -1,10 +1,10 @@
 ---
 layout:     post
-title:      "Linux知识整理"
+title:      "Linux知识整理 (2)"
 subtitle:   "CentOS在虚拟机中的安装、基本配置和基础软件安装"
 date:       2017-11-13
 author:     "Fiona"
-header-img: "img/node.png"
+header-img: "img/linux-bg.jpg"
 tags:
     - Linux
     - CentOS
