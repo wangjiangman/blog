@@ -72,6 +72,32 @@ Windows环境直接忽略，直接开始在Linux环境上搭建，主要两种�
     $ sudo make install  //这里一定要加sudo
     </pre>
 
+## Node版本管理工具
+    - nvm
+    - n
+
+[管理 node 版本，选择 nvm 还是 n？](http://taobaofed.org/blog/2015/11/17/nvm-or-n/)
+    
+## npm源管理工具nrm
+nrm用于切换npm官方源和国内的npm源。
+nrm内置的几个npm源有：
+```shell
+[root@localhost ~]# nrm ls
+
+* npm ---- https://registry.npmjs.org/
+  cnpm --- http://r.cnpmjs.org/
+  taobao - https://registry.npm.taobao.org/
+  nj ----- https://registry.nodejitsu.com/
+  rednpm - http://registry.mirror.cqupt.edu.cn/
+  npmMirror  https://skimdb.npmjs.com/registry/
+  edunpm - http://registry.enpmjs.org/
+
+```
+nrm使用
+```shell
+nrm use taobao
+```
+
 ## Node学习资源
 
 1. 网站

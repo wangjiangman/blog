@@ -60,7 +60,7 @@ CentOS默认关闭wired,设置为开机开启。
 [root@localhost fiona]# vim /etc/sysconfig/network-scripts/ifcfg-eth0 
 ```
 
-### 关闭防火墙
+### 关闭firewall防火墙（另外注意是否有iptables防火墙）
 ```shell
 # 查看防火墙状态
 [root@localhost demo]# firewall-cmd --state
