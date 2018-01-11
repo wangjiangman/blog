@@ -37,7 +37,7 @@ body {
 flex在移动端兼容性越来越好。
 ![java-javascript](/blog/img/in-post/post-mobile-web-summary/mobile-flex.png)
 flex的cheetsheet见下图，详见[flex入门](https://juejin.im/post/58e3a5a0a0bb9f0069fc16bb)
-![java-javascript](/blog/img/in-post/post-mobile-web-summary/flex.webp)
+![java-javascript](/blog/img/in-post/post-mobile-web-summary/flex.png)
 
 #### 其它布局方式 百分比和vh, vw
 百分比不多解释。  
