@@ -49,3 +49,26 @@ flex的cheetsheet见下图，详见[flex入门](https://juejin.im/post/58e3a5a0a
 img{ width: 100%; height: auto;max-width: 100%; display: block; }
 ```
 
+### touch防止误触
+其实就是实现**tap**方法的过程： 
+0. 能点击的按钮绑定三个事件，touchstart，touchmove，touchend
+1. 先声明一个全局变量
+2. touchstart给全局变量赋值0
+3. touchmove给全局变量赋值为非0
+4. touchend判断全局变量是否为0,不是就return,是就执行你的代码
+```javascript
+var flag = 0;
+$(element)
+    .on('touchstart', function () {
+        flag = 0;
+    })
+    .on('touchmove', function () {
+        flag = 1;
+    })
+    .on('touchend', function () {
+        if(flag == 0){
+            // HERE YOUR CODE TO EXECUTE ON TAP-EVENT
+        }
+    });
+```
+
