@@ -13,6 +13,11 @@ tags:
 
 > late is better than never
 
+### 视图
+```html
+<!-- 设置移动端视图 -->
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+```
 
 ### 字体
 设置最佳实践[参考链接](https://github.com/AlloyTeam/Mars/blob/master/solutions/font-family.md)
@@ -71,4 +76,11 @@ $(element)
         }
     });
 ```
+
+### 远程调试webview的方法
+> 在Android4.4或者更高版本中，使用DevTools可以在原生应用中调试WebView内容。
+1. 在您的原生 Android 应用中启用 WebView 调试；在 Chrome DevTools 中调试 WebView。
+2. 通过 chrome://inspect 访问已启用调试的 WebView 列表。
+3. 调试 WebView 与通过远程调试调试网页相同。    
+参考链接：[远程调试Webview](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/webviews?hl=zh-cn)
 
