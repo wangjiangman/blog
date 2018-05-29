@@ -84,3 +84,12 @@ $(element)
 3. 调试 WebView 与通过远程调试调试网页相同。    
 参考链接：[远程调试Webview](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/webviews?hl=zh-cn)
 
+### 移动端我们在点击页面中的一些图片的时候会出现阴影。处理方法只要给a标签加上
+```html
+a {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+```
+
