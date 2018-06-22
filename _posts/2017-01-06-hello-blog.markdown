@@ -44,5 +44,5 @@ Just do it ！
 
 **博客的调试：** 
 
-详细见下一篇博客。[jekyll本地调试环境搭建](http://localhost:4000/blog/2017/01/07/use-jekyll/)
+详细见下一篇博客。[jekyll本地调试环境搭建](https://wangjiangman.github.io/blog//2017/01/07/use-jekyll/)
 
