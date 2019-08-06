@@ -194,3 +194,6 @@ window.applicationCache.addEventListener('updateready', function () {
 - 当manifest文件被更新之后，虽然本次访问下载了资源并触发了onupdateready方法，但是新的资源并不会被执行，需要手动刷新执行新的文件。
 - 直接请求被缓存的资源，也会从缓存中读取。
 - 该特性已从web标准中废弃，未来浏览器可能不再支持，MDN推荐使用Service Workers代替。（根据调查，截止到目前，浏览器仍未完全支持Service Workers，如果要兼容移动端，暂时还不能使用Service Workers）
+
+### 参考
+- [W3C application cache规范](https://www.w3.org/TR/2011/WD-html5-20110525/offline.html)

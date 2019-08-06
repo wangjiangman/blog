@@ -78,6 +78,9 @@ http://rubygems.org/
 - Deprecation: The 'gems' configuration option has been renamed to 'plugins'. Please update your config file accordingly.  
 	解决：  
 	配置文件_config.yml中，使用了 plugins 的配置项，应该是用plugins替换掉gems
-- 插件（如：jekyll-paginate）没有安装问题  
+- 插件（如：jekyll-paginate）没有安装的问题  
   解决：  
   <pre><code>gem install jekyll-paginate</code></pre>
+- 默认端口被占用（指定host和port）            
+    解决：
+    <pre><code>jekyll serve --host=IP地址 --port=端口</code></pre>
